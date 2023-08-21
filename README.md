@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>bvrit html forms</title>
+<style>
+/*input[type=text]{
+border:none;
+border-bottom:solid 2px black;
+width:65%;
+background-color:#33d42a;
+color:white;
+padding-left:80px;
+margin:20px;
+}*/
+input[type=text]:focus{
+border:none;
+border-bottom:double 3px white;
+width:40%;
+background-color:lightblue;
+color:orange;
+padding-left:30px;
+margin:10px;
+}
+input[type=email]{
+background-color:red;
+}
+</style>
+</head>
+<body bgcolor="lightblue">
+<form style="background-color:rgb(232, 123, 210);">
+<fieldset>
+<legend><b><i><mark>Registration Form</mark></i></b></legend>
+<label>First Name<span style="color:red;">*</span> :</label>
+<input type="text" placeholder="enter your first name" required>
+<br>
+<br>
+<label>Last Name :</label>
+<input type="text" placeholder="last name" required>
+<br>
+<br>
+Gender :
+<input type="radio" name="g">Female
+<input type="radio" name="g">Male
+<br>
+<br>
+Mobile Number :
+<input type="tel" pattern="[0-9]{10}">
+<br>
+<br>
+DOB :
+<input type="month">
+<br>
+<br>
+Email Id :
+<input type="email">
+<br>
+<br>
+Password :
+<input type="password">
+<br>
+<br>
+select your branch :
+<select required>
+<option>--select--</option>
+<option>ECE</option>
+<option>CSE</option>
+<option>EEE</option>
+<option>MECH</option>
+</select>
+<br>
+<br>
+Skills :<br>
+<input type="checkbox">C Language<br>
+<input type="checkbox">C++<br>
+<input type="checkbox">Frontend<br>
+<input type="checkbox">Java<br>
+<input type="checkbox">Python<br>
+<input type="checkbox">database<br>
+<br>
+<br>
+upload Resume :
+<input type="file">
+<br>
+<br>
+Enter your percentage :
+<input type="number" min="70" max="100">
+<br>
+<br>
+select your color :
+<input type="color">
+<br>
+<br>
+Time slot :
+<input type="time">
+<br>
+<br>
+<center>
+<input type="reset">
+<br>
+<br>
+<input type="submit">
+</center>
+</form>
+</body>
+</html>
